@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>music</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.parallax{
+    background-image: url("image/darshan raval/darshan.jpg");
+
+    /* Set a specific height */
+    min-height: 1350px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: red;
+    font-size: 15px;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top:30%;
+}
+.left-col{
+    margin-left: 6%;
+}
+.left-col h1{
+    font-size: 90px;
+    color: #fff;
+    line-height: 110px;
+    float: left;
+    text-align: center;
+}
+.left-col h1 img{
+    width: 400px;
+    float: right;
+}
+.right-col{
+    float:right;
+    margin-right: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #fff; 
+}
+.list{
+    float:right;
+    margin-right: 6%;
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+}
+.right-col p{
+    font-size: 18px;
+    color: #000000;
+    font-weight: 400;
+    margin-right: 15px;
+}
+.list p{
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-right: 15px;
+}
+#songoneicon{
+    width: 95px;
+    cursor: pointer;
+}
+
+#songtwoicon{
+    width: 95px;
+    cursor: pointer;
+}
+#songthreeicon{
+    width: 95px;
+    cursor: pointer;
+}
+#songfouricon{
+    width: 95px;
+    cursor: pointer;
+}
+#songfiveicon{
+    width: 95px;
+    cursor: pointer;
+}
+#songsixicon{
+    width: 95px;
+    cursor: pointer;
+}
+#songsevenicon{
+    width: 95px;
+    cursor: pointer;
+}
+#songeighticon{
+    width: 95px;
+    cursor: pointer;
+}
+#songnineicon{
+    width: 95px;
+    cursor: pointer;
+}
+#songtenicon{
+    width: 95px;
+    cursor: pointer;
+}
+#songelevenicon{
+    width: 95px;
+    cursor: pointer;
+}
+#songtwelveicon{
+    width: 95px;
+    cursor: pointer;
+}
+.parallax2 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("image/image.jpg");
+    min-height: 767px;
+}
+.heading{
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.heading h1{
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    float: center;
+}
+.heading1 h1{
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    float: center;
+    text-align: center;
+}
+.heading p{
+    float: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+
+}
+.heading1 p{
+    float: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+
+}
+
+.heading1 .list p{
+    font-size: 36px;
+    text-align: center;
+}
+.parallax3 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax3 {
+    background-image: url("image/artist list dark.jpg");
+    min-height: 775px;
+}
+a{
+    text-decoration: none;
+}
+.parallax4 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("image/image.png");  
+}
+.parallax4 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.About{
+    background-color: black;
+    text-align: center;
+}
+.social_icon {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.social_icon ul {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    text-align: center;
+}
+.social_icon li{
+    float: left;
+    padding: 30px 5px;
+}
+.contact p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+.left{
+    margin: 0px;
+}
+.left img{
+    width: 200px;
+    height: 280px;
+    float: left;
+}
+.left p{
+    color: white;
+    font-size: 25px;
+}
+.right{
+    margin: 0px;
+    float: right;
+}
+.right img{
+    width: 350px;
+    height: 250px;
+    float: right;
+}
+.right p{
+    color: white;
+    font-size: 25px;    
+}
+</style>
+<body>    
+    <div class="home">
+    <div class="parallax">
+        <div class="container">
+            <div class="navbar">
+                <img src="image/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#more">EXPLORE</a></li>
+                    <li><a href="#connect">CONNECT</a></li>
+                </ul>
+            </div>
+            <div class="content">                
+                <div class="left-col">
+                    <h1 >DARSHAN RAVAL  &nbsp &nbsp &nbsp &nbsp 
+                    <img src="image/darshan raval/darshansq.jpg" class="alan"></h1>                    
+                </div>
+                <div class="right-col">
+                    <P>Click here to play<br>
+                        Asal mein
+                    </P>
+                    <img src="image/darshan raval/Asal_Mein_-_Darshan_Raval_Officia_(getmp3.pro).jpg" id="songoneicon">&nbsp<br>
+                </div>
+                <div class="right-col">
+                    <P>Click here to play<br>
+                        Barish lete aana   
+                    </P>
+                    <img src="image/darshan raval/Baarish_Lete_Aana_-_Official_Video_(getmp3.pro).jpg" id="songtwoicon">&nbsp<br>
+                </div>        
+                <div class="right-col">
+                    <P>Click here to play<br>
+                        Hawa banke
+                    </P>
+                    <img src="image/darshan raval/Darshan_Raval_-_Hawa_Banke_Offici_(getmp3.pro).jpg" id="songthreeicon">&nbsp<br>
+                </div>
+                <div class="right-col">
+                    <P>Click here to play<br>
+                        Do din
+                    </P>
+                    <img src="image/darshan raval/Do_Din_-_Darshan_Raval_Akanksha_S_(getmp3.pro).jpg" id="songfouricon">&nbsp<br>
+                </div>                
+                <div class="right-col">
+                    <P>Click here to play<br>
+                        Ek taraf
+                    </P>
+                    <img src="image/darshan raval/Ek_Tarfa_-_Darshan_Raval_Official_(getmp3.pro).jpg" id="songfiveicon">&nbsp<br>
+                </div>
+                <div class="right-col">
+                    <P>Click here to play<br>
+                        Goriya
+                    </P>
+                    <img src="image/darshan raval/Goriye_Official_Video_Darshan_Rav_(getmp3.pro).jpg" id="songsixicon">&nbsp<br>
+                </div>
+                <div class="right-col">
+                    <P>Click here to play<br>
+                        Jannat ve
+                    </P>
+                    <img src="image/darshan raval/Jannat_Ve_Official_Video_Darshan_(getmp3.pro).jpg" id="songsevenicon">&nbsp<br>
+                </div>
+
+                <div class="right-col">
+                    <P>Click here to play<br>
+                        Mojhe peene do
+                    </P>
+                    <img src="image/darshan raval/Mujhe_Peene_Do_-_Darshan_Raval_Of_(getmp3.pro).jpg" id="songeighticon">&nbsp<br>
+                </div>
+                <div class="right-col">
+                    <P>Click here to play<br>
+                        Nayan ne bandh
+                    </P>
+                    <img src="image/darshan raval/Nayan_Ne_Bandh_Rakhine_-_Darshan_Ra_(getmp3.pro).jpeg" id="songnineicon">&nbsp<br>
+                </div>
+                <div class="right-col">
+                    <P>Click here to play<br>
+                        Rabba mehar
+                    </P>
+                    <img src="image/darshan raval/Rabba_Mehar_Kari_Official_Video_D_(getmp3.pro).jpg" id="songtenicon">&nbsp<br>
+                </div>
+                <div class="right-col">
+                    <P>Click here to play<br>
+                        Tere zikr
+                    </P>
+                    <img src="image/darshan raval/Tera_Zikr_-_Darshan_Raval_Officia_(getmp3.pro).jpg" id="songelevenicon">&nbsp<br>
+                </div>
+                <div class="right-col">
+                    <P>Click here to play<br>
+                        Tere naal video
+                    </P>
+                    <img src="image/darshan raval/Tere_Naal_Video_Song_Tulsi_Kumar_(getmp3.pro).jpg" id="songtwelveicon">&nbsp<br>
+                </div>
+            </div>
+        </div>
+
+        <audio id="songone">
+            <source src="songs/darshan raval/Asal_Mein_-_Darshan_Raval_Officia_(getmp3.pro).mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var songone = document.getElementById("songone");
+            var songoneicon = document.getElementById("songoneicon")
+
+            songoneicon.onclick = function(){
+                if(songone.paused){
+                    songone.play();
+                    songoneicon.src = "image/pause.png";
+            }else{
+                    songone.pause();
+                    songoneicon.src = "image/darshan raval/Asal_Mein_-_Darshan_Raval_Officia_(getmp3.pro).jpg";
+            }
+            }
+        </script>
+
+        <audio id="songtwo">
+            <source src="songs/darshan raval/Baarish_Lete_Aana_-_Official_Video_(getmp3.pro).mp3" type="audio/mp3">        
+        </audio>
+        <script>
+            var songtwo = document.getElementById("songtwo");
+            var songtwoicon = document.getElementById("songtwoicon")
+            
+            songtwoicon.onclick = function(){
+                if(songtwo.paused){
+                    songtwo.play();
+                    songtwoicon.src = "image/pause.png";
+            }else{
+                    songtwo.pause();
+                    songtwoicon.src = "image/darshan raval/Baarish_Lete_Aana_-_Official_Video_(getmp3.pro).jpg";
+            }
+            }
+        </script>
+
+        <audio id="songthree">
+            <source src="songs/darshan raval/Darshan_Raval_-_Hawa_Banke_Offici_(getmp3.pro).mp3" type="audio/mp3">    
+        </audio>
+        <script>
+            var songthree = document.getElementById("songthree");
+            var songthreeicon = document.getElementById("songthreeicon")
+
+            songthreeicon.onclick = function(){
+                if(songthree.paused){
+                    songthree.play();
+                    songthreeicon.src = "image/pause.png";
+            }else{
+                    songthree.pause();
+                    songthreeicon.src = "image/darshan raval/Darshan_Raval_-_Hawa_Banke_Offici_(getmp3.pro).jpg";
+            }
+            }
+        </script>
+
+        <audio id="songfour">
+            <source src="songs/darshan raval/Do_Din_-_Darshan_Raval_Akanksha_S_(getmp3.pro).mp3" type="audio/mp3">            
+        </audio>
+        <script>
+            var songfour = document.getElementById("songfour");
+            var songfouricon = document.getElementById("songfouricon")
+
+            songfouricon.onclick = function(){
+                if(songfour.paused){
+                    songfour.play();
+                    songfouricon.src = "image/pause.png";
+            }else{
+                    songfour.pause();
+                    songfouricon.src = "image/darshan raval/Do_Din_-_Darshan_Raval_Akanksha_S_(getmp3.pro).jpg";
+            }
+            }
+        </script>
+
+        <audio id="songfive">
+            <source src="songs/darshan raval/Ek_Tarfa_-_Darshan_Raval_Official_(getmp3.pro).mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var songfive = document.getElementById("songfive");
+            var songfiveicon = document.getElementById("songfiveicon")
+
+            songfiveicon.onclick = function(){
+                if(songfive.paused){
+                    songfive.play();
+                    songfiveicon.src = "image/pause.png";
+            }else{
+                    songfive.pause();
+                    songfiveicon.src = "image/darshan raval/Ek_Tarfa_-_Darshan_Raval_Official_(getmp3.pro).jpg";
+            }
+            }
+        </script>
+
+        <audio id="songsix">
+            <source src="songs/darshan raval/Goriye_Official_Video_Darshan_Rav_(getmp3.pro).mp3" type="audio/mp3">
+            
+        </audio>
+        <script>
+            var songsix = document.getElementById("songsix");
+            var songsixicon = document.getElementById("songsixicon")
+
+            songsixicon.onclick = function(){
+                if(songsix.paused){
+                    songsix.play();
+                    songsixicon.src = "image/pause.png";
+            }else{
+                    songsix.pause();
+                    songsixicon.src = "image/darshan raval/Goriye_Official_Video_Darshan_Rav_(getmp3.pro).jpg";
+            }
+            }
+        </script>
+
+        <audio id="songseven">
+            <source src="songs/darshan raval/Jannat_Ve_Official_Video_Darshan_(getmp3.pro).mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var songseven = document.getElementById("songseven");
+            var songsevenicon = document.getElementById("songsevenicon")
+
+            songsevenicon.onclick = function(){
+                if(songseven.paused){
+                    songseven.play();
+                    songsevenicon.src = "image/pause.png";
+            }else{
+                    songseven.pause();
+                    songsevenicon.src = "image/darshan raval/Jannat_Ve_Official_Video_Darshan_(getmp3.pro).jpg";
+            }
+            }
+        </script>
+
+        <audio id="songeight">
+            <source src="songs/darshan raval/Mujhe_Peene_Do_-_Darshan_Raval_Of_(getmp3.pro).mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var songeight = document.getElementById("songeight");
+            var songeighticon = document.getElementById("songeighticon")
+
+            songeighticon.onclick = function(){
+                if(songeight.paused){
+                    songeight.play();
+                    songeighticon.src = "image/pause.png";
+            }else{
+                    songeight.pause();
+                    songeighticon.src = "image/darshan raval/Mujhe_Peene_Do_-_Darshan_Raval_Of_(getmp3.pro).jpg";
+            }
+            }
+        </script>
+
+        <audio id="songnine">
+            <source src="songs/darshan raval/Nayan_Ne_Bandh_Rakhine_-_Darshan_Ra_(getmp3.pro).mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var songnine = document.getElementById("songnine");
+            var songnineicon = document.getElementById("songnineicon")
+
+            songnineicon.onclick = function(){
+                if(songnine.paused){
+                    songnine.play();
+                    songnineicon.src = "image/pause.png";
+            }else{
+                    songnine.pause();
+                    songnineicon.src = "image/darshan raval/Nayan_Ne_Bandh_Rakhine_-_Darshan_Ra_(getmp3.pro).jpeg";
+            }
+            }
+        </script>
+
+        <audio id="songten">
+            <source src="songs/darshan raval/Rabba_Mehar_Kari_Official_Video_D_(getmp3.pro).mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var songten = document.getElementById("songten");
+            var songtenicon = document.getElementById("songtenicon")
+
+            songtenicon.onclick = function(){
+                if(songten.paused){
+                    songten.play();
+                    songtenicon.src = "image/pause.png";
+            }else{
+                    songten.pause();
+                    songtenicon.src = "image/darshan raval/Rabba_Mehar_Kari_Official_Video_D_(getmp3.pro).jpg";
+            }
+            }
+        </script>
+
+        <audio id="songeleven">
+            <source src="songs/darshan raval/Tera_Zikr_-_Darshan_Raval_Officia_(getmp3.pro).mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var songeleven = document.getElementById("songeleven");
+            var songelevenicon = document.getElementById("songelevenicon")
+
+            songelevenicon.onclick = function(){
+                if(songeleven.paused){
+                    songeleven.play();
+                    songelevenicon.src = "image/pause.png";
+            }else{
+                    songeleven.pause();
+                    songelevenicon.src = "image/darshan raval/Tera_Zikr_-_Darshan_Raval_Officia_(getmp3.pro).jpg";
+            }
+            }
+        </script>
+
+        <audio id="songtwelve">
+            <source src="songs/darshan raval/Tere_Naal_Video_Song_Tulsi_Kumar_(getmp3.pro).mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var songtwelve = document.getElementById("songtwelve");
+            var songtwelveicon = document.getElementById("songtwelveicon")
+
+            songtwelveicon.onclick = function(){
+                if(songtwelve.paused){
+                    songtwelve.play();
+                    songtwelveicon.src = "image/pause.png";
+            }else{
+                    songtwelve.pause();
+                    songtwelveicon.src = "image/darshan raval/Tere_Naal_Video_Song_Tulsi_Kumar_(getmp3.pro).jpg";
+            }
+            }
+        </script>
+        </div>
+    </div>
+    </div>
+    <div class="parallax2">
+        <div style="color: #777;
+                    background-color:white;
+                    text-align:center;
+                    padding:5px 80px;
+                    text-align: justify;">
+        </div>
+
+        <div class="heading">
+            <h1><a name="about">ABOUT  &nbsp</h1>
+            <p>
+                
+
+
+Darshan Raval is an Indian singer, composer, and songwriter. He is known for his work in different languages including Hindi, Gujarati, Punjabi and Bengali. In 2014, he participated in the StarPlus music reality show, India's Raw Star, finishing as the first runner-up.
+
+Raval was born in Ahmedabad, Gujarat, India, on October 18, 1994. He began his musical training at a young age, and he was influenced by his father, who was a singer. Raval made his debut as a playback singer in the 2014 film "Gujjubhai The Great." However, it was not until the release of the song "Ek Ladki Ko Dekha Toh Aisa Laga" in 2016 that Raval achieved widespread recognition. The song became a massive hit, and it helped to launch Raval's career as a leading playback singer in Bollywood.
+
+Since then, Raval has sung in over 50 films, and he has recorded songs in several Indian languages. He has collaborated with some of the biggest names in Bollywood, including Himesh Reshammiya, Amaal Mallik, and Tanishk Bagchi.
+
+Raval's songs are known for their soulful vocals and their catchy melodies. He is also known for his ability to convey a wide range of emotions through his singing. Raval's music has been praised by critics and fans alike, and he is considered to be one of the most talented singers in India today.
+
+Here are some additional facts about Darshan Raval:
+
+He is a self-taught musician.
+He is a big fan of Kishore Kumar and Lata Mangeshkar.
+He loves to travel and experience new cultures.
+He is currently working on his debut album.
+
+
+
+            </p></div>
+    </div>
+
+    <div class="parallax3">
+        <div style="background-color:white; padding:5px 80px;"></div>
+            <div class="container2">           
+                <div class="heading1">
+                    <h1><a name="more">MORE ARTIST  &nbsp</h1>
+                        <div class="list">
+                            <a href="arman malik.html"><p>Armaan Malick </p></a>
+                        </div>
+                        <div class="list">
+                            <a href="arijit singh.html"><p>Arijit Singh</p></a>
+                        </div>
+                        <div class="list">
+                            <a href="alan walker.html"><p>Alan Walker</p></a>
+                        </div>
+                        <div class="list">
+                            <a href="aditya rikhari.html"><p>Aditya Rikhari</p></a>
+                        </div>       
+                        <div class="list">
+                            <a href="darshan raval.html"><p>Darshan Raval</p></a>
+                        </div>             
+                        <div class="list">
+                            <a href="jass manak.html"><p>Jass Manak</p></a>
+                        </div>                    
+                        <div class="list">
+                            <a href="justin bieber.html"><p>Justin Bieber</p></a>
+                        </div>
+                        <div class="list">
+                            <a href="overwerk.html"><p>Overwerk</p></a>
+                        </div>                    
+                        <div class="list">
+                            <a href="udit narayan.html"><p>Udit Narayan</p></a>
+                        </div>
+                        <div class="list">
+                            <a href="the weekand.html"><p>The Weekand</p></a>
+                        </div>
+                        <div class="list">
+                            <a href="the chainsmoker.html"><p>The Chainsmokers</p></a>
+                        </div>
+                        <div class="list">
+                            <a href="rahat.html"><p>Rahat Fateh Ali Khan</p></a>
+                        </div>
+                </div>
+            </div>
+    </div>
+    <div class="parallax4">
+        <a name="connect">
+        <div style="background-color:rgb(26, 17, 17); padding:5px 80px;">  
+            <div class="social_icon">
+                
+            </div>
+                <div class="contact">                    
+                    <p>Contact us:-Just don't do it nobody have time for that.</p>
+                    <p>Designed and developed by:-Savita bhabi private problems.</p>
+                    <p>© 2000 by CSIT department of GITA.NO Right Reserved cause we are broke.</p>
+                </div>
+            </div>
+        </div>
+        </a>
+    </div>      
+</body>
+</html>
